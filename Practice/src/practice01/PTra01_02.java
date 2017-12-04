@@ -10,12 +10,14 @@ public class PTra01_02 {
 	public static void main(String[] args) {
 
 		// ★ 12～14行目をコメントにしてください。
-		ここをコメントにしてください
-		ここをコメントにしてください
-		ここをコメントにしてください
+		/*原田翔馬、27歳
+		 グミと音楽が好きです
+		 目が疲れてきました*/
+
+
 
 		//  ★「Hello, world」と出力（コマンドプロンプトに表示）してください
-
+		System.out.println("Hello, world");
 
 	}
 }
