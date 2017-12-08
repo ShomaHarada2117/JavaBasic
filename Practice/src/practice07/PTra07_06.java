@@ -16,14 +16,14 @@ public class PTra07_06 {
 		};
 
 		// ★ 配列arrayに格納されている全ての数字の平均を出力してください
-		int sum =0;
-		for(int a =0; a <array.length; a++) {
-			int num =0;
-			for(int b =0; b <array[a].length; b ++) {
-				int total =sum +num;
-			System.out.print(total);
-
+		for(int i =0; i <array.length; i++ ) {
+			int point =0;
+			int ave =0;
+			for(int j =0; j <array[i].length; j++) {
+				point+=array[i][j];
+				ave =point /array[i].length;
 			}
+			System.out.println(ave);
 		}
-		}
+	}
 }
