@@ -1,4 +1,5 @@
 package practice09;
+import practice09.util.Util;
 /*
  * PTra09_01.java
  *   作成	LIKEIT	2017
@@ -9,20 +10,8 @@ package practice09;
 public class PTra09_01 {
 	public static void main(String[] args) {
 		 String str = "この文字列をゆっくり表示したい";
-		 dispMessageSlowly(str,500);
-	}
 		// ★ 変数strを、Util内のメソッドを用いて0.5秒間隔で表示させなさい
 		// ※ Utilはインポートしても良いし、完全限定名で記述しても良いです
-
-		public static void dispMessageSlowly(String message, long millisecind) {
-			char[] array = message.toCharArray();
-			for (int i = 0; i < message.length(); i++) {
-				System.out.print(array[i]);
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					/* エラーが発生した場合はここにくる */
-				}
-			}
-		}
+	 Util.dispMessageSlowly (str,500);
 	}
+}
