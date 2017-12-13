@@ -15,10 +15,11 @@ public class PTra07_03 {
 
 
 		// ★ 配列keywordに格納されている値を後ろから順番に全て表示してください
-		System.out.println(kyeword[4]);
-		System.out.println(kyeword[3]);
-		System.out.println(kyeword[2]);
-		System.out.println(kyeword[1]);
-		System.out.println(kyeword[0]);
+		for(int i =kyeword.length -1; i >=0; i--){
+			//配列を後ろから表示する方法
+			//kyeword.length(i)を0以上(0まで)マイナスしていく
+			//lengthは1からカウント(配列の要素数とずれるから)だから、-1しておく
+			System.out.println(kyeword[i]);
+		}
 	}
 }
