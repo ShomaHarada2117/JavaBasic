@@ -8,15 +8,16 @@ public class Car {
 	int run(){
 		java.util.Random random= new java.util.Random();
 
-		if(this.gasoline !=0){
-			this.gasoline -=1;
-			int num =random.nextInt(15)+1;
-			return num;
+		this.gasoline -=1;
+		int num =random.nextInt(15)+1;
+
+		if(this.gasoline <0) {
+			return  -1;
 		}
 
-		if(this.gasoline <=0) {
-			return -1;
-		}
+		return num;
+
+
 	}
 }
 
