@@ -37,7 +37,7 @@ public class PTra04_02 {
 			}
 
 			// ★ 変数indexに1を加算した数を、変数indexに代入する
-			index +=1;
+			index ++;
 
 		}
 
