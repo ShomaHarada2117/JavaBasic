@@ -39,17 +39,21 @@ public class PTra17_03 {
 			for (int i = 0; i < question.length; i++) {
 				System.out.println("問題：" + (i + 1));
 				System.out.println(question[i]);
-
-				System.out.println("回答を数字で入力してください");
+				while(false) {
+					System.out.println("回答を数字で入力してください");
 				String input = ThrowExceptionUtil.inputValue();
 
-				int num = Integer.parseInt(input);
+				try {
+					int num = Integer.parseInt(input);//文字列を数字に変換
+				}catch(NumberFormatException e) {
+					boolean isNumber;
+					isNumber =false;
+				}
 
 				if (answer[i] == num) {
 					score++;
-				}
-			}
-		} catch(IOException e) {
+
+		}catch(IOException e) {
 			System.out.println("例外が発生しました");
 		} catch(NumberFormatException e) {
 			System.out.println("数字以外が入力されました");
@@ -59,5 +63,3 @@ public class PTra17_03 {
 		System.out.println("あなたの得点は・・・" + score + "点です！");
 
 	}
-
-}
