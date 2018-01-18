@@ -1,6 +1,6 @@
 package practice18.entity;
 
-public class player extends Object{
+public class Player extends Object{
 	private String position;
 	private String name;
 	private String country;
