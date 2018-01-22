@@ -49,9 +49,11 @@ public class PTra18_03 {
         }
 
 		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
-        for( Player playerInf :playerList) {
-          	 if(playerInf[3] =="レアル・マドリード") {
-          		 playerInf.remove();
+       //ArrayListは可変で、箱そのものを除外するので、その後の箱が繰り下がってきてしまうから、後ろから除外する
+        for (int i = playerList.size()-1; i >=0; i--){
+        	//a equals(b) bをaと同じか比較する
+          	 if(playerList.get(i).getTeam().equals("レアル・マドリード") || playerList.get(i).getTeam().equals("バルセロナ")) {
+          		playerList.remove(i);
           	 }
          }
 		// ★ 削除後のArrayListの中身を全件出力してください
